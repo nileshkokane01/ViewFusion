@@ -252,8 +252,8 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     device_idx=_GPU_INDEX
-    ckpt='/home/ubuntu/workspace/zero123/zero123/zero123-xl.ckpt'
-    config='/home/ubuntu/workspace/zero123/zero123/configs/sd-swap_att-c_concat-256.yaml'
+    ckpt='./zero123-xl.ckpt'
+    config='./configs/sd-swap_att-c_concat-256.yaml'
 
     # device = f'cuda:{device_idx}'
     config = OmegaConf.load(config)

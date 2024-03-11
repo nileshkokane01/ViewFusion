@@ -261,7 +261,7 @@ if __name__ == '__main__':
 
     device_idx=_GPU_INDEX
     ckpt='./zero123/zero123-xl.ckpt'
-    config='./zero123/configs/sd-swap_att-c_concat-256.yaml'
+    config='./configs/sd-swap_att-c_concat-256.yaml'
 
     config = OmegaConf.load(config)
 
@@ -275,7 +275,7 @@ if __name__ == '__main__':
 
     inference_temp = args.inference_temp
     auto_temp = args.auto_temp
-    output_dir = f'./zero123/experiments_cvpr/pretrain_zero123_xl_360_autoregressive/gen_inference_t{inference_temp:.2f}_auto_t{auto_temp:.2f}'
+    output_dir = f'./experiments_cvpr/pretrain_zero123_xl_360_autoregressive/gen_inference_t{inference_temp:.2f}_auto_t{auto_temp:.2f}'
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
     with open(f"{output_dir}/parameter.txt", "w") as f:
